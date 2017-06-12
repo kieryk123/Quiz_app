@@ -33,10 +33,17 @@
 			padding: 20px;
 			margin: 30px 55px;
 			background-color: #1ABD9B;
-			border: 0;
+			border: 3px solid #1ABD9B;
 			border-radius: 10px;
 			font-size: 20px;
 			font-weight: 700;
+			box-shadow: none;
+			outline: 0;
+			&:hover, &focus {
+				outline: 0;
+				box-shadow: none;
+				background-color: #EBF1EF;
+			}
 			@media only screen and (max-width : 992px) {
 				width: 100%;
 				margin: 5px 0;
