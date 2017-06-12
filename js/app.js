@@ -23,7 +23,7 @@ function getQuestions(url) {
 		}
 	});
 }
-getQuestions('http://fireart.pl/pkieryk/quiz/questions.json');
+getQuestions('https://kieryk123.github.io/Quiz_app/questions.json');
 
 // Quiz object
 var Quiz = {
