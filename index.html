@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+		<div class="wrapper">
+			<div class="quiz-window">
+				<h1 class="question">Treść pytania</h1>
+				<h3>Pozostały czas: <span class="time">10</span></h3>
+				<h3>Twoje punkty: <span class="points">3</span></h3>
+				<div class="buttons-wrapper">
+					<button class="answer-btn answerA" type="button">A</button>
+					<button class="answer-btn answerB" type="button">B</button>
+					<button class="answer-btn answerC" type="button">C</button>
+					<button class="answer-btn answerD" type="button">D</button>
+				</div>
+			</div>
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+
+      $('.buttons-wrapper').on('click', '.correct', function() {
+        Quiz.checkGameState();
+        Quiz.addPoint();
+        Quiz.setQuestion();
+        Quiz.isLastQuestion();
+      });
+
+      $('.answer-btn').on('click', function() {
+        if (!$(this).hasClass('correct')) {
+          Quiz.gameOver = true;
+          Quiz.checkGameState();
+        }
+      });
+
+    </script>
+
+  </body>
+</html>

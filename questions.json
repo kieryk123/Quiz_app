@@ -1,0 +1,9 @@
+{
+"questions": [
+    {"question": "W którym roku miał miejsce chrzest Polski? <br> A) w 966 B) w 669 C) w 1000 D) w 996", "answer": "A"},
+    {"question": "Z którym krajem Polska nie graniczy od wschodu? <br> A) Z Ukrainą B) Z Rosją C) Z Białorusią D) Z Litwą", "answer": "B"},
+    {"question": "Kto jest autorem tych słów: 'Już tam ojciec do swej Basi mówi zapłakany – Słuchaj jeno, pono nasi biją w tarabany'? <br> A) Adam Mickiewicz B) Juliusz Słowacki C) Henryk Dąbrowski D) Józef Wybicki", "answer": "D"},
+    {"question": "Wynikiem dzielenia przez 0 jest zawsze: <br> A) -1 B) 0 C) 1 D) Nie dzieli się przez zero", "answer": "D"},
+    {"question": "Jaka jest miara kątów przy podstawie w trójkącie równoramiennym? <br> A) Mniejsza niż 90 stopni B) Większa niż 90 stopni C) Równa 90 stopniom D) dowolna", "answer": "A"}
+  ]
+}
